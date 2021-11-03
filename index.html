@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+   <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Emelianov Roman CV</title>
 </head>
 <body>
+    <div class="container">
+    <div class="info">
+        <img src="../images/Емельянов _small.jpg" alt="фотография пользователя" class="avatar">
 
-    <table cellspacing="15">
-<tr>
-    <td>
-        <img src="Емельянов _small.jpg" width="120" alt="фотография пользователя">
-    </td>
-    <td>
         <h1>Емельянов Роман Анатольевич</h1>
-        <p><em>Я ведущий специалист по сопровождению <strong>Программного Обеспечения</strong></em></p>
+        <p>Я ведущий специалист по сопровождению Программного Обеспечения</p>
         <p>Я люблю играть на русском бильярде, увлекаюсь фотографией и музыкой.</p>
-    </td>
-</tr>
 
-    </table>
-   
+        <h4>Мои социальные сети</h4>
+      
+            <a href="https://yandex.ru" target="_black">Instagram</a> |
+            <a href="https://developer.mozilla.org/ru/docs/Web" target="_black">Telegram</a> |
+            <a href="https://codepen.io" target="_black">ВКонтакте</a>
+    </div>
 
-<hr>
-<h2>Мои социальные сети</h2>
-<ul type = "disc">
-    <li> <a href="https://yandex.ru" target="_black">Instagram</a></li>
-    <li> <a href="https://developer.mozilla.org/ru/docs/Web" target="_black">Telegram</a></li>
-    <li> <a href="https://codepen.io" target="_black">ВКонтакте</a></li>
-</ul>
-<hr>
+
+<div class="card bg-yellow">
 <h2>Мои увлечения</h2>
-<ol>
+<ol class="list">
     <li>Русский бильярд</li>
     <li>Игра на пианино</li>
     <li>Программирование</li>
     <li>Сборка кубика Рубика</li>
 </ol>
+</div>
 
+<div class="card bg-green">
 <h2>Опыт работы</h2>
-<table>
-        <tr>
-        <th>Компания</th>
-        <th>Должность</th>
-        <th>Годы</th>
+<table class="table">
+
+    <tr>
+        <td>ЭЛАР</td>
+        <td>Технолог</td>
+        <td>2008-2011</td>
     </tr>
 <tr>
     <td>ЭЛАР</td>
@@ -61,25 +58,44 @@
 </tr>
 
 </table>
-<hr>
+</div>
+
+<div class="card bg-red">
 <h2>Локальные ресурсы</h2>
-<a href="localRes.html">Посмотреть список</a>
-<hr>
-<h2>Связаться со мной</h2>
-<form action="/">
-    <label for="message">Ваше сообщение:</label><br>
-<textarea id="message" cols="30" rows="3"></textarea>
-<br>
-<label for="name">Ваше имя:</label>
-<input type="text" id="name" placeholder="Начните вводить имя...">
-<br>
-<label for="name">Ваш Email:</label>
-<input type="email" id="email" placeholder="Начните email...">
-<br><br>
-<input type="submit" value="Отправить">
+<ul class="link-list">
+    <li>
+        <a href="http://portal/default.aspx">Портал ЭЛАР</a>
+    </li>
+    <li>
+        <a href="http://tracker.elar.ru:8080/secure/Dashboard.jspa">JIRA</a>
+    </li>
+    <li>
+        <a href="http://uchet-srv/">СУТ ПУ</a>
+    </li>
+</ul>
 
-</form>
-<hr>
+</div>
 
+<div class="contact">
+    <h2>Связаться со мной</h2>
+    <form action="/">
+      <div class="row">
+    <div class="form-group">
+    <label for="name">Ваше имя:</label>
+    <input type="text" id="name" placeholder="Введите ваше имя...">
+    </div>
+    <div class="form-group">
+    <label for="name">Ваш Email:</label>
+    <input type="email" id="email" placeholder="Введите email...">
+    </div>
+</div>
+    <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" cols="30" rows="3"></textarea>
+            </div>
+    <input type="submit" value="Отправить">
+    </form>
+</div>
+</div>
 </body>
 </html>
